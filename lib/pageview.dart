@@ -33,13 +33,30 @@ class _PageViewWidgetState extends State<PageViewWidget> {
             )
             ),
           ), 
-            Image.asset('Images/bg.png', height: 290, fit: BoxFit.contain,),
+            Image.asset('Images/bg.png', height: 290, 
+            fit: BoxFit.contain,),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 60),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Row(
-                  children: List.generate(3, (index) => _buildPageIndicator(index)),
+              padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 70),
+              child: Container(
+                decoration: BoxDecoration( 
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: Colors.white, 
+                    width: 1
+                  ),
+                  boxShadow: [ 
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.4), 
+                      offset: const Offset(2, 0), 
+                      blurRadius: 8, 
+                      spreadRadius: 1)
+                  ]
+                ),
+                child: ClipRRect( 
+                  borderRadius: BorderRadius.circular(12),
+                  child: Row(
+                    children: List.generate(3, (index) => _buildPageIndicator(index)),
+                  ),
                 ),
               ),
             )
@@ -49,12 +66,12 @@ class _PageViewWidgetState extends State<PageViewWidget> {
   }
   Widget _buildPageIndicator(int index) {
     return Container(
-      width: 90,
+      width: 76,
       height: 20,
       decoration: BoxDecoration(
        color: _currentPage >= index
             ? const Color.fromARGB(255, 149, 230, 124) // Color for completed steps
-            : Colors.black
+            : Colors.grey
       ),
     );
   }
