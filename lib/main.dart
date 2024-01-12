@@ -7,6 +7,7 @@ import 'package:widgets_/menu.dart';
 import 'package:widgets_/model.dart';
 import 'package:widgets_/pageview.dart';
 import 'package:widgets_/person.dart';
+import 'package:widgets_/reorderlist.dart';
 // import 'package:widgets_/prof.dart';
 
 void main(List<String> args) {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: BottomNavbar(),
+      home: ReorderList(),
     );
   }
 }
