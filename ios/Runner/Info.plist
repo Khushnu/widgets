@@ -45,5 +45,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<!-- <key>NSBatteryUsageDescription</key>
+<string>We need to access the battery information to optimize power consumption.</string> -->
 </dict>
 </plist>

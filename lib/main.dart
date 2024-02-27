@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-// import 'package:widgets_/Screens/onboarding.dart';
+import 'package:widgets_/Screens/batteryinfo.dart';
 import 'package:widgets_/bottomnav.dart';
 import 'package:widgets_/cart.dart';
 import 'package:widgets_/home.dart';
 import 'package:widgets_/menu.dart';
 import 'package:widgets_/model.dart';
-import 'package:widgets_/pageview.dart';
 import 'package:widgets_/person.dart';
-import 'package:widgets_/reorderlist.dart';
-// import 'package:widgets_/prof.dart';
+
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -18,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: ReorderList(),
+      home: BatteryInfoScreen(),
     );
   }
 }
@@ -61,11 +59,11 @@ class _HomePageState extends State<BottomNavbar> {
                 Image.asset(modelNav[index].image,
                  color: isSelected ? const Color.fromARGB(255, 255, 69, 7) : Colors.black,
                   height: 30,),
-                  Text(modelNav[index].name, style: TextStyle(color: Colors.black, fontSize: 15),)
+                  Text(modelNav[index].name, style: const TextStyle(color: Colors.black, fontSize: 15),)
               ],
             ));
         })..insert(2, Transform.translate( 
-          offset: Offset(0, -35),
+          offset: const Offset(0, -35),
           child: Container(
             height: 70, 
             width: 70, 

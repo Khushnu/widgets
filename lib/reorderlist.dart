@@ -12,14 +12,14 @@ class _ReorderListState extends State<ReorderList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Reorder List'),),
+      appBar: AppBar(title: const Text('Reorder List'),),
       body: ReorderableListView(
         children: List.generate(items.length, (index) {
           return ListTile(
             key: Key('$index'),
             tileColor: items[index].isOdd ? Colors.teal : Colors.grey, 
             title: Text('${items[index]}'),
-            trailing: Icon(Icons.drag_handle),
+            trailing: const Icon(Icons.drag_handle),
           );
         }),
         onReorder: (int oldIndex, int newIndex){
