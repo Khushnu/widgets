@@ -6,6 +6,8 @@ import 'package:widgets_/home.dart';
 import 'package:widgets_/menu.dart';
 import 'package:widgets_/model.dart';
 import 'package:widgets_/person.dart';
+import 'package:widgets_/slide_animation.dart';
+import 'package:widgets_/stream_tutorial.dart';
 
 
 void main(List<String> args) {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: BatteryInfoScreen(),
+      home: SlideAnimation(),
     );
   }
 }
