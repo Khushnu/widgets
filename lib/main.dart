@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_/Screens/ApiScreens/api_screen.dart';
 import 'package:widgets_/Screens/batteryinfo.dart';
 import 'package:widgets_/bottomnav.dart';
 import 'package:widgets_/cart.dart';
 import 'package:widgets_/home.dart';
+import 'package:widgets_/list_view_high.dart';
 import 'package:widgets_/menu.dart';
 import 'package:widgets_/model.dart';
 import 'package:widgets_/person.dart';
-import 'package:widgets_/slide_animation.dart';
-import 'package:widgets_/stream_tutorial.dart';
+// import 'package:widgets_/slide_animation.dart';
+// import 'package:widgets_/stream_tutorial.dart';
 
 
 void main(List<String> args) {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SlideAnimation(),
+      home: MyHomePage(),
     );
   }
 }

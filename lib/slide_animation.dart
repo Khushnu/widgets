@@ -52,7 +52,6 @@ class _SlideAnimationState extends State<SlideAnimation> {
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment:  CrossAxisAlignment.end,
-                
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Row(
@@ -62,7 +61,6 @@ class _SlideAnimationState extends State<SlideAnimation> {
                   Text('03', style: TextStyle(
                   fontSize:  isExpandedcont3 ? 40 :20,
                   fontWeight: FontWeight.bold,
-                  
                   color: Colors.black),), 
                   Icon(Icons.flutter_dash_outlined, size:  isExpandedcont3 ? 70 : 20,)
                 ],
